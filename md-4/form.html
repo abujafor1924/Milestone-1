@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Create</title>
+    <style>
+      label {
+        display: block;
+        margin-top: 20px;
+      }
+      fieldset {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h1>This is My PHO Form</h1>
+      <label for="name">
+        Your Name
+        <input type="name" id="name" placeholder=" Your Name" />
+      </label>
+      <label for="email">
+        Your Email
+        <input type="email" id="email" placeholder=" Your Email" />
+      </label>
+      <label for="number">
+        Your Number
+        <input type="number" id="number" placeholder=" Your Number" />
+      </label>
+      <label for="password">
+        Your password
+        <input
+          type="password"
+          id="password"
+          placeholder=" Your Password"
+          minlength="8"
+          required
+        />
+      </label>
+      <fieldset>
+        <legend>Pik on mobail</legend>
+        <label for="mobail">
+          Nokia
+          <input type="radio" name="mobail" id="Nokia" />
+        </label>
+        <label for="mobail">
+          Realme
+          <input type="radio" name="mobail" id="Realme" />
+        </label>
+        <label for="mobail">
+          Infinix
+          <input type="radio" name="mobail" id="Infinix" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Type of Charger</legend>
+        <label for="charger">
+          <input type="checkbox" name="charger" id="Ctype" />
+          Ctype
+        </label>
+        <label for="charger">
+          <input type="checkbox" name="charger" id="Btype" />
+          Btype
+        </label>
+        <label for="charger">
+          <input type="checkbox" name="charger" id="Dtype" />
+          Dtype
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>For Yor Details</legend>
+        <textarea name="you deserv" id="details" cols="60" rows="3"></textarea>
+      </fieldset>
+      <input type="reset" value="reset" />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
